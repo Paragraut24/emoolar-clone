@@ -1,0 +1,74 @@
+.navbar-brand {
+  font-family: "Italiana", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.nav-link{
+  /* font-family: "Dosis", sans-serif; */
+  /* font-optical-sizing: auto; */
+  font-weight: 500;
+  /* font-style: normal; */
+  font-size: large;
+}
+ 
+.getInTouch {
+  color: blueviolet;
+}
+.explore {
+  color: #fff;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.3s;
+  transform: scale(1.02);
+}
+.btn-outline-blueviolet {
+  color: blueviolet;
+  border-color: blueviolet;
+}
+.btn-outline-blueviolet:hover {
+  color: #fff;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.nav-item:hover {
+  background: linear-gradient(to right, rgba(255, 228, 228, 0.938) 0%, rgba(200, 163, 249, 0.701) 100%);
+  transform: scale(1.01);
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+.nav-item {
+  border-radius: 10px;
+  transition: all 0.2s ease; /* Added to apply out animation */
+}
+.active {
+  color: blueviolet!important;
+  border-radius: 15px;
+}
+
+
+.text-blueviolet {
+  color: blueviolet !important;
+}
+
+.btn-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
