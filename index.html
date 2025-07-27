@@ -58,7 +58,7 @@
             <a href="services.html" class="btn btn-light btn-lg shadow-sm px-4 w-100 mt-3 d-flex align-items-center justify-content-center ">
               <i class="bi bi-lightning-fill me-1"></i> Explore Services
             </a>
-            <a href="#" class="btn btn-outline-light btn-lg px-4 w-100 mt-3 d-flex align-items-center justify-content-center ">
+            <a href="contactus.html" class="btn btn-outline-light btn-lg px-4 w-100 mt-3 d-flex align-items-center justify-content-center ">
               <i class="bi bi-chat-dots me-2"></i> Contact Us
             </a>
           </div>
@@ -230,8 +230,10 @@
           in the digital landscape.</p>
         <i class="bi bi-rocket-takeoff display-4 mb-3 animate__animated animate__pulse"
           style="color: blueviolet;"></i><br>
-        <a href="#" class="btn btn-lg btn-outline-blueviolet mt-3 animate__animated animate__pulse btn-pulse">Get in
+        <a href="contactus.html" class="btn btn-lg btn-outline-blueviolet mt-3 animate__animated animate__pulse btn-pulse">Get in
           Touch</a>
+          <br>
+        <a href="#" onclick="showSweetAlert()" class="btn btn-sm btn-primary mt-3 animate__animated animate__pulse btn-pulse">Chat with the chatbot</a>
 
       </div>
   </section>
@@ -295,6 +297,12 @@
   </footer>
 
 
+  <!-- Chatbot Embed -->
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="6R22q2EHCE2HP0sjnDAkl";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+
   <!-- Footer (basic) -->
   <!-- <footer class="bg-dark text-white text-center py-3 mt-auto">
     <div class="container">
@@ -315,6 +323,17 @@
       once: true       // Whether animation should happen only once
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+  function showSweetAlert() {
+    Swal.fire({
+      title: 'Heads up!',
+      text: 'Click the button at the bottom right to chat.',
+      icon: 'info',
+      confirmButtonText: 'Got it!'
+    });
+  }
+</script>
 
 </body>
 
